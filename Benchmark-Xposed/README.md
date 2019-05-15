@@ -4,7 +4,7 @@ Code reconfiguration module implementation by UMA.
 
 ## Information
 
-This program allows the configuration of the number of adapted methods of the application using Xposed. In addition, it allows the generation of user interactions. To specify them, simply write the number and push the intro button. As result, the program returns an application configured according to these parameters, ready to be opened using Android Studio to be compiled and, finally, be launched in an Android phone.
+This program allows the configuration of the number of adapted methods of the application using Xposed. In addition, it allows the generation of user interactions. To specify them, simply write the number and push the intro button. As result, the program returns an application configured according to these parameters, ready to be opened using Android Studio to be compiled and, finally, be executed in an Android phone.
 
 ## Requirements
 
