@@ -1,4 +1,4 @@
-# Internal Classes Proxy Application Benchmark configurator
+# Internal Classes Proxy Application Benchmark Configurator
 
 Code reconfiguration module implementation by UMA.
 
