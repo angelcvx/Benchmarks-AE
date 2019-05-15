@@ -4,7 +4,7 @@ Code reconfiguration module implementation by UMA.
 
 ## Information
 
-This program allows the configuration of the number of adaptation rules of the application, the number of adaptable classes and the number of adaptation alternatives. In addition, it allows the generation of user interactions. To specify them, simply write the number and push the intro button. As result, the program returns an application configured with this parameters, ready to be compiled using Android Studio and, finally, be runned on an Android phone. The content of the directory "External classes" must be copied in the directory "data/local/tmp/footballLoaders/" of the smartphone.
+This program allows the configuration of the number of adaptation rules of the application, the number of adaptable classes and the number of adaptation alternatives. In addition, it allows the generation of user interactions. To specify them, simply write the number and push the intro button. As result, the program returns an application configured according to these parameters, ready to be compiled using Android Studio and, finally, be executed on an Android phone. The content of the directory "External classes" must be copied in the directory "data/local/tmp/footballLoaders/" of the smartphone.
 
 - Number of adaptation rules: total amount of conditions that the system checks in order to decide if a change must be made in the application in order to being adapted to the user behaviour.
 
