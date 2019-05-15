@@ -19,7 +19,7 @@ chomp $nRules;
 
 if (looks_like_number($nRules)) {
 
-   my $filename = 'Benchmark-External/app/src/main/java/analysis/Analysis.java';
+   my $filename = 'Benchmark-External-Application/app/src/main/java/analysis/Analysis.java';
    my $data = read_file($filename);
    $data =~ s/private int nRules = 1;/private int nRules = ${nRules};/g;
    write_file($filename, $data);
@@ -31,10 +31,10 @@ print "Number of adaptable classes: ";
 $nAdaptable = <>;
 chomp $nAdaptable;
 
-my $handlerUrl = 'Benchmark-External/app/src/main/java/handler/';
+my $handlerUrl = 'Benchmark-External-Application/app/src/main/java/handler/';
 my $handlerFile = 'MyInvocationHandler';
 
-my $generatorUrl = 'Benchmark-External/app/src/main/java/generator/';
+my $generatorUrl = 'Benchmark-External-Application/app/src/main/java/generator/';
 my $generatorFile = 'Generator';
 
 if (looks_like_number($nAdaptable)) {
@@ -62,7 +62,7 @@ if (looks_like_number($nAdaptable)) {
 
    }
 
-   my $mainFile = 'Benchmark-External/app/src/main/java/registry/com/selectmenu/MainActivity.java';
+   my $mainFile = 'Benchmark-External-Application/app/src/main/java/registry/com/selectmenu/MainActivity.java';
    my $stringToInsert = '';
    my $stringToInsert2 = '';
    my $stringToInsert3 = '';
@@ -90,7 +90,7 @@ chomp $nAlternatives;
 my $classesDir = 'External classes/';
 my $classesName = 'classes';
 
-my $reconfigurationFile = 'Benchmark-External/app/src/main/java/reconfiguration/AdaptLeagues.java';
+my $reconfigurationFile = 'Benchmark-External-Application/app/src/main/java/reconfiguration/AdaptLeagues.java';
 
 if (looks_like_number($nAlternatives) && $nAlternatives > 1) {
 
@@ -169,7 +169,7 @@ if ($experimentB eq "y") {
       }
   }
   
-  my $filename = 'Benchmark-Internal/Benchmark-External/app/src/main/java/registry/com/selectmenu/MainActivity.java';
+  my $filename = 'Benchmark-External-Application/app/src/main/java/registry/com/selectmenu/MainActivity.java';
   my $dataGen = read_file("${filename}");
   $dataGen =~ s/\/\/IMPORTS/import load.LoadInterface;\nimport android.content.Context;\nimport android.content.SharedPreferences;\n/g;
   $dataGen =~ s/\/\/RUN EXPERIMENT/runExperiment();\n/g;
