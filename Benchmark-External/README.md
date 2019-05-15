@@ -1,4 +1,4 @@
-# External Classes Proxy Application Benchmark configurator
+# External Classes Proxy Application Benchmark Configurator
 
 Code reconfiguration module implementation by UMA.
 
