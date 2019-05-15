@@ -13,7 +13,7 @@ chomp $nMethods;
 
 if (looks_like_number($nMethods)) {
 
-  my $filename = 'app/src/main/java/reconfiguration/CodeInjection.java';       
+  my $filename = 'Benchmark-Xposed-Application/app/src/main/java/reconfiguration/CodeInjection.java';       
   my $data = read_file($filename);
   $data =~ s/private int numberOfMethods = 1;/private int numberOfMethods = ${nMethods};/g;
   write_file($filename, $data);
@@ -67,7 +67,7 @@ if ($experimentB eq "y") {
       }
   }
   
-  my $filename = 'Benchmark-Internal/Benchmark-External/app/src/main/java/registry/com/selectmenu/MainActivity.java';
+  my $filename = 'Benchmark-Xposed-Application/app/src/main/java/registry/com/selectmenu/MainActivity.java';
   my $dataGen = read_file("${filename}");
   $dataGen =~ s/\/\/IMPORTS/import load.LoadInterface;\nimport android.content.Context;\nimport android.content.SharedPreferences;\n/g;
   $dataGen =~ s/\/\/RUN EXPERIMENT/runExperiment();\n/g;
