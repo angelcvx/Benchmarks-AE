@@ -4,13 +4,13 @@ Code reconfiguration module implementation by UMA.
 
 ## Information
 
-This program allows the configuration of the number of adaptation rules of the application, the number of adaptable classes and the number of adaptation alternatives. In addition, it allows the generation of user interactions. To specify them, simply write the number and push the intro button. As result, the program returns an application configured with these parameters, ready to be compiled using Android Studio and, finally, be executed on an Android phone.
+This program allows the configuration of the number of adaptation rules of the application, number of adaptable classes and number of adaptation alternatives. In addition, it allows generating random user interactions. To specify them, simply write the number and push intro button. As result, the program returns an application configured with these parameters, ready to be compiled using Android Studio and, finally, be executed on an Android phone.
 
-- Number of adaptation rules: total amount of conditions that the system checks in order to decide if a change must be made in the application in order to being adapted to the user behaviour.
+- Number of adaptation rules: total number of conditions checked by the system in order to decide if a change must be done or not in the application in order to being adapted to user behavior.
 
 - Number of adaptable classes: determines the number of functionalities (classes) that can be adapted at runtime. These classes are monitored by handlers and monitors, that are increased in a 1 to 1 relation.
 
-- Number of adaptation alternatives: the possibilities of adaptation of the adaptable classes are named adaptation alternatives, that are set by this value.
+- Number of adaptation alternatives: the possibilities of adaptation of the adaptable classes are named adaptation alternatives, that are set by this number.
 
 ## Requirements
 
